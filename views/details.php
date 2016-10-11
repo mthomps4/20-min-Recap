@@ -12,7 +12,7 @@ include 'header.php';
 ?>
 
 <h1> Details Page </h1>
-<h3><a href="http://localhost/CrudyTest/"> Back to List </a></h3>
+<h3><a href="http://localhost/20MinTest/"> Back to List </a></h3>
 
 
 <h4> <?php echo "$title -- $date"; ?> </h4>

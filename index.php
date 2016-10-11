@@ -8,6 +8,8 @@ include 'views/header.php';
   <h1><?php echo $page_title; ?></h1>
   <h3> ToDo Log </h3>
 
+  <a href="http://localhost/20MinTest/views/addItem.php"> Add Item </a>
+
   <table>
     <thead>
       <tr>
@@ -26,12 +28,12 @@ include 'views/header.php';
       foreach($tasks as $task){
         echo "<tr>";
 
-        echo "<td> <a href='http://localhost/CrudyTest/views/details.php?id=". $task['id'] . "'>". $task['title'] . "</a></td>";
-        echo "<td> <a href='http://localhost/CrudyTest/views/details.php?id=". $task['id'] . "'>". $task['description'] . "</a></td>";
+        echo "<td> <a href='http://localhost/20MinTest/views/details.php?id=". $task['id'] . "'>". $task['title'] . "</a></td>";
+        echo "<td> <a href='http://localhost/20MinTest/views/details.php?id=". $task['id'] . "'>". $task['description'] . "</a></td>";
         echo "<td><a href='#'>". $task['category'] ."</a></td>";
         echo "<td><a href='#'>". $task['date'] ."</a></td>";
         echo "<td> Edit </td>";
-        echo "<td> Delete </td>";
+        echo "<td> <a href='http://localhost/20MinTest/views/delete.php?id=". $task['id'] . "'> Delete </a></td>";
 
         echo "</tr>";
       }
